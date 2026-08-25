@@ -6,7 +6,7 @@ export default function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const handleScrollTo = (e: React.MouseEvent, targetId: string) => {
+const handleScrollTo = (e, targetId) => {
     e.preventDefault();
     if (location.pathname === "/") {
       const element = document.getElementById(targetId);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowUpRight, MapPin, Compass, Target, Users, Layers, Lock } from "lucide-react";
+import { ArrowUpRight, MapPin, Compass, Target, Users, Layers } from "lucide-react";
 import { projects } from "../data/projects";
 
 export default function Home() {
@@ -71,7 +71,7 @@ export default function Home() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
               </span>
               <span className="text-[#4e5550] flex items-center gap-1 font-mono">
-                <MapPin className="w-3 h-3 text-[#2d503e] inline shrink-0" /> Toronto, ON • {time || "02:38 PM"}
+                <MapPin className="w-3.5 h-3.5 text-[#2d503e] inline shrink-0" /> Toronto, ON • {time || "02:38 PM"}
               </span>
             </div>
             <span className="hidden sm:inline text-[#ded8cc]">|</span>
@@ -163,26 +163,6 @@ export default function Home() {
               </div>
             </Link>
           ))}
-
-          {/* Locked Teaser */}
-          <div className="p-5 sm:p-7 rounded-3xl bg-[#ece7dc]/60 border border-[#ded7c8] opacity-85">
-            <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
-              <div className="space-y-1.5">
-                <span className="text-[11px] sm:text-xs uppercase tracking-widest px-2.5 sm:px-3 py-0.5 rounded-full bg-white/60 border border-[#ded8cc] text-[#737a71] font-mono">
-                  Governance & Access
-                </span>
-                <h3 className="text-lg sm:text-xl font-serif text-[#2a2e2b]">
-                  Reserved. Elected. Silenced?
-                </h3>
-                <p className="text-[#5e635d] text-xs sm:text-sm max-w-2xl leading-relaxed">
-                  Designing for trust, institutional onboarding, and active visibility with first-time elected women leaders in rural governance ecosystems.
-                </p>
-              </div>
-              <span className="text-xs px-3.5 py-1.5 rounded-full bg-white text-[#5e635d] border border-[#ded8cc] flex items-center gap-1.5 self-start shadow-sm whitespace-nowrap">
-                <Lock className="w-3.5 h-3.5" /> Request Access
-              </span>
-            </div>
-          </div>
         </div>
       </section>
 
