@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowUpRight, MapPin, Compass, Target, Users, Layers } from "lucide-react";
+import { ArrowUpRight, MapPin, Compass, Target, Users, Layers, Sparkles } from "lucide-react";
 import { projects } from "../data/projects";
 
 export default function Home() {
@@ -244,6 +244,24 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* 5. Contact CTA */}
+      <section className="px-4 sm:px-6 max-w-5xl mx-auto">
+        <div className="p-8 rounded-3xl bg-[#1d2621] text-white flex flex-col sm:flex-row items-center justify-between gap-5 shadow-xl">
+          <div className="space-y-1.5 text-center sm:text-left">
+            <h3 className="text-xl sm:text-2xl font-serif">Let's uncover what your users aren't saying.</h3>
+            <p className="text-xs sm:text-sm text-[#a3b3aa]">
+              Available for full-time UX research leadership, strategic consulting, or qualitative advisory.
+            </p>
+          </div>
+          <a
+            href="mailto:ranjadhishar@gmail.com?subject=Strategic%20Research%20Inquiry"
+            className="bg-[#d18667] hover:bg-[#d18667]/90 text-white px-5 py-2.5 rounded-full text-xs uppercase font-mono tracking-wider font-semibold whitespace-nowrap transition-all shadow-md flex items-center gap-1.5"
+          >
+            Start a Conversation <Sparkles className="w-3.5 h-3.5" />
+          </a>
         </div>
       </section>
 

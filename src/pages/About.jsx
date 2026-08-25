@@ -126,7 +126,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* 2. Visual Case Study Previews (Alternating Layout matching Framer) */}
+      {/* 2. Visual Case Study Previews */}
       <section className="px-4 sm:px-6 max-w-5xl mx-auto space-y-12">
         <div className="flex items-center justify-between border-b border-[#e2ded4] pb-3">
           <span className="text-xs font-mono uppercase tracking-widest text-[#2d503e] font-semibold">
@@ -215,7 +215,6 @@ export default function About() {
               src="/images/fintech-journey-map.png" 
               alt="Mortgage Operations Journey Map" 
               className="w-full h-auto object-contain rounded-xl"
-              onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "https://ranjeetaadhikari.ca/images/fintech-journey-map.png"; }}
             />
           </div>
         </div>
@@ -227,7 +226,6 @@ export default function About() {
               src="/images/panchayat-women-meeting.jpg" 
               alt="Women leaders meeting in Telangana" 
               className="w-full h-full object-cover"
-              onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80"; }}
             />
           </div>
           <div className="space-y-3 order-1 md:order-2">
@@ -269,22 +267,18 @@ export default function About() {
           </div>
 
           <div className="lg:col-span-5 flex justify-center">
-            <div className="rounded-3xl overflow-hidden border border-[#ded8cc] bg-white shadow-sm max-w-sm">
+            <div className="rounded-3xl overflow-hidden border border-[#ded8cc] bg-white shadow-sm max-w-sm aspect-[4/5] w-full">
               <img 
-                src="/images/ranjeeta-profile.jpg" 
+                src="/images/ranjeeta-portrait.jpg" 
                 alt="Ranjeeta Adhikari" 
-                className="w-full h-auto object-cover"
-                onError={(e) => {
-                  e.currentTarget.onerror = null;
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80";
-                }}
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4. Three Core Pillars (Immerse -> Translate -> Co-Design) */}
+      {/* 4. Three Core Pillars */}
       <section className="px-4 sm:px-6 max-w-5xl mx-auto space-y-6">
         <div>
           <span className="text-xs font-mono uppercase tracking-widest text-[#2d503e] font-semibold">
