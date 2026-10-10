@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f5f0;
+  color: #1c1d1f;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible focus ring for all native interactive elements */
+:focus-visible {
+  outline: 2px solid #204030;
+  outline-offset: 3px;
+}
+
+/* Skip to main content accessibility utility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 16px;
+  background: #204030;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  z-index: 100;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
