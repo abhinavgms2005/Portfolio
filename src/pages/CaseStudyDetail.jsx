@@ -1227,24 +1227,6 @@ export default function CaseStudyDetail() {
           </div>
         </section>
 
-        {/* Walkthrough CTA (Driving directly to LinkedIn) */}
-        <section aria-labelledby="deck-cta-heading" className="p-8 rounded-3xl bg-[#16201b] text-white flex flex-col sm:flex-row items-center justify-between gap-5 shadow-xl border border-[#2a3830]">
-          <div className="space-y-1.5 text-center sm:text-left">
-            <h2 id="deck-cta-heading" className="text-xl sm:text-2xl font-serif text-white">Want to walk through the complete service architecture?</h2>
-            <p className="text-xs sm:text-sm text-[#d8e4dc]">
-              Available to walk through detailed operational blueprints, friction matrices, and production roadmaps in a 1-on-1 walkthrough.
-            </p>
-          </div>
-          <a
-            href="https://www.linkedin.com/in/ranjeeta-adhikari-a425b3187/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#a6482a] hover:bg-[#8f3a1e] text-white px-5 py-3 rounded-full text-xs uppercase font-mono tracking-wider font-semibold whitespace-nowrap transition-all shadow-md flex items-center gap-1.5 min-h-[44px] focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
-          >
-            Connect on LinkedIn <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
-          </a>
-        </section>
-
       </article>
     </main>
   );
